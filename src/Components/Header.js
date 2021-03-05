@@ -1,10 +1,11 @@
 const Header = props => {
 
-}
-return (
- <div>
 
- </div>
-);
+ return (
+  <div>
+
+  </div>
+ );
+}
 
 export default Header
