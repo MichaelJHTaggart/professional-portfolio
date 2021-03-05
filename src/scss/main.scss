@@ -12,6 +12,8 @@ $font-weights: (
  display: flex;
  flex-direction: column;
  justify-content: space-between;
+ height: 100vh;
+ width: 100vw;
 }
 
 .project-button{
@@ -86,9 +88,21 @@ $font-weights: (
 
 .responsive-image{
  display: flex;
- width:97vw;
+ width: 97vw;
+}
+.responsive-image-small-right{
+ display: flex;
+ position: relative;
+ left: 76vw;
+ bottom: 750px;
 }
 .responsive-image-small-left{
  display: flex;
- justify-content: flex-end;
+ position: relative;
+ bottom: 873px;
+}
+
+.resize{
+ width: 0 auto;
+ height: 0 auto;
 }
