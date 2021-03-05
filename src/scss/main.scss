@@ -8,6 +8,12 @@ $font-weights: (
  "bold": 700
 );
 
+.body{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
 .project-button{
  display: flex;
  background-color: $secondary-accent-color;
@@ -19,3 +25,70 @@ $font-weights: (
    background-color: $accent-color;
   }
 };
+
+.project-banner-right{  
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 480px;
+  background: $accent-color;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0; width: 0; height: 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 130px solid $accent-color;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+  }
+}
+.project-banner-left{  
+ display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 480px;
+  background: $accent-color;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 66vw;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0; width: 0; height: 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -130px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 130px solid $accent-color;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+  }
+}
+
+.responsive-image{
+ display: flex;
+ width:97vw;
+}
+.responsive-image-small-left{
+ display: flex;
+ justify-content: flex-end;
+}
