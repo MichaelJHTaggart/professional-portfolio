@@ -1,0 +1,21 @@
+$primary-color: #e7ecef;
+$accent-color: #a3cef1;
+$secondary-accent-color: #f96900;
+$text-color: #8b8c89;
+$font-weights: (
+ "regular": 400,
+ "medium": 500, 
+ "bold": 700
+);
+
+.project-button{
+ display: flex;
+ background-color: $secondary-accent-color;
+ width: 5vw;
+ height: 3vh;
+ justify-content: center;
+ align-items: center;
+  &:hover {
+   background-color: $accent-color;
+  }
+};
