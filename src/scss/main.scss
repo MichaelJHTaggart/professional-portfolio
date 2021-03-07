@@ -91,7 +91,9 @@ $font-weights: (
     border-bottom: 240px solid transparent;
   }
 }
-
+.nothing{
+  
+}
 .responsive-image{
  display: flex;
  width: 100vw;
@@ -106,7 +108,7 @@ $font-weights: (
  background-image: url('https://lh3.googleusercontent.com/tuZKlKB9xP0ZsoqXV08z75IpW1SDrRK3lVfyMFWki7QkcRdsrMf5UIHQwDO7fJpOFfpyWQ01K2IyzGXsWrklZ4cvUwmus6TIG1PesNwby0vQWNMyKxRPkqZvKmJlzmQB9Q=w1280');
  background-size: cover;
 }
-#parallax-image-right-fixed{
+#parallax-image-right{
  height: 70vh;
  width: 19vw;
  display: flex;
@@ -115,7 +117,7 @@ $font-weights: (
  top: 25vh;
  background-image: url('https://lh3.googleusercontent.com/uAFDoigB0k_VA82jSvR2NcBZq-5Ai_JZOkreS5p36JE1gLIbJToKzEvpQ8eSEt9mdquk0OoVpzUeqhUkqsudv6u8iPOjzpDzCaVvQ11Go3QWpsXxdeHwHE9AvdW-wfcqKQ=w1280');
 }
-#parallax-image-left-fixed{
+#parallax-image-left{
  height: 70vh;
  width: 19vw;
  display: flex;
