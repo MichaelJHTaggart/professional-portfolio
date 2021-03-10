@@ -1,4 +1,8 @@
 import '../scss/main.scss'
+import lemonLarge from '../assets/images/lemonpropLarge.png'
+import handleLarge from '../assets/images/handlewhileLarge.png'
+import handlePhone from '../assets/images/pHandlewhile.png'
+import lemonPhone from '../assets/images/pLemonprop.png'
 
 const Body = props => {
 
@@ -21,10 +25,10 @@ const Body = props => {
         </div>
 
         <div id="parallax-image-1">
-          <img alt="A preview of the website at the size of a personal computer" class="responsive-image" src="https://lh6.googleusercontent.com/nYccIuWtT-o7xScUEM83DLRdyVY-Zj_tZYwgXq7lvHXJjf8pxGxoBrQy9f0T8ZlcOPA_XdwXpxYA31P8FtGUDvEyuI0Z-ynNC6pJ6dtigjbZlYgLqauxhL2Lvlpn5ktxcg=w1280" />
+          <img alt="A preview of the website at the size of a personal computer" class="responsive-image" src={lemonLarge} />
         </div>
         <div id="parallax-image-right">
-          <img alt="A preview of the website at the size of a cellphone" class="responsive-image-small" src="https://lh4.googleusercontent.com/ppmnoSMVpFQwMPqrthhrTBd5TdF7DqSMnZjRs849mjjXdlzNb_PLQRKcu2mI7kxjKFRlHwiUYerSA6kx1c_VJmek7cgttWVDI5u2Bo9RuuUcT2QPczUpNh5gSchGy3S_dA=w1280" />
+          <img alt="A preview of the website at the size of a cellphone" class="responsive-image-small" src={lemonPhone} />
         </div>
 
 
@@ -40,10 +44,10 @@ const Body = props => {
 
 
         <div id="parallax-image-2">
-          <img alt="A preview of the website at the size of a personal computer" class="responsive-image" src="https://lh4.googleusercontent.com/ohVLItmk-YO7ZQqCvvM9kZsOVG1Ej59g_YqYwMLA8kGL49NNoTOKgoL-fCMSE2ve02mMs1qDudkHBXSxS4zAvkKNx9PuRTZQ4Mtil3rbLxDamVR3sAPBlQgFIYuJKXA7=w1280" />
+          <img alt="A preview of the website at the size of a personal computer" class="responsive-image" src={handleLarge} />
         </div>
         <div id="parallax-image-left">
-          <img alt="A preview of the website at the size of a cellphone" src="https://lh5.googleusercontent.com/4zX1WypUJRduxNY-5EZcwKjNpd1Y4COgN-rVIX6PblIoOYRqZINNE0-f5Eg0h-hOxYTFBlrlqT1Mb_X1TGJKQfjUASt_yCEapkR2Fvatzq9fnTzvhGK64MqrXoD1yfw3ng=w1280" />
+          <img alt="A preview of the website at the size of a cellphone" src={handlePhone} />
         </div>
       </section>
 
