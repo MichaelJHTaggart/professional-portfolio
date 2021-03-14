@@ -9,6 +9,7 @@ const Body = props => {
   const openNewTab = (url) => {
     const win = window.open(`${url}`);
     win.focus();
+
   }
 
 
