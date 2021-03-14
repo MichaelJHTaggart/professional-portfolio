@@ -81,3 +81,20 @@ $font-weights: (
   }
 }
 
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section:nth-child(1){
+  background-image: url("../../src/assets/images/lemonpropLarge.png");
+  background-size: cover;
+}
+
+section:nth-child(2){
+  background-image: url("../../src/assets/images/handlewhileLarge.png");
+  background-size: cover;
+}
