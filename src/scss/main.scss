@@ -1,25 +1,34 @@
 @import './reset.scss';
 
-$primary-color: #e7ecef;
-$accent-color: #a3cef1;
-$secondary-accent-color: #f96900;
-$text-color: #8b8c89;
+$background-color: #30011E;
+$primary-accent-color: #3772ff;
+$secondary-accent-color: #04e762;
+$tertiary-accent-color: #BCE7FD;
+$text-color: #E6E8E6;
 $font-weights: (
  "regular": 400,
  "medium": 500, 
  "bold": 700
 );
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: Manuskript,Georgia,"serif";
+  z-index: 1;
+  opacity: 1!important;
+  transition: margin .3s;
+}
 
 .project-button{
  display: flex;
- background-color: $secondary-accent-color;
+ background-color: $tertiary-accent-color;
  width: 5vw;
  height: 3vh;
  justify-content: center;
  align-items: center;
   &:hover {
-   background-color: $accent-color;
+   background-color: $secondary-accent-color;
   }
 };
 
@@ -28,10 +37,11 @@ $font-weights: (
   flex-direction: column;
   width: 600px;
   height: 480px;
-  background: $accent-color;
+  background: $background-color;
   position: relative;
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
 
   &:after {
     content: '';
@@ -46,7 +56,7 @@ $font-weights: (
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 130px solid $accent-color;
+    border-left: 130px solid $background-color;
     border-top: 240px solid transparent;
     border-bottom: 240px solid transparent;
   }
@@ -54,14 +64,14 @@ $font-weights: (
 .project-banner-left{  
  display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 500px;
   height: 480px;
-  background: $accent-color;
+  background: $background-color;
   position: relative;
   align-items: center;
   justify-content: center;
-  left: 66vw;
-
+  align-self: flex-end;
+  transform: perspective(0px) translate3d(1300px, 750px, 100px);
   &:after {
     content: '';
     position: absolute;
@@ -75,32 +85,44 @@ $font-weights: (
     bottom: 0;
     width: 0;
     height: 0;
-    border-right: 130px solid $accent-color;
+    border-right: 130px solid $background-color;
     border-top: 240px solid transparent;
     border-bottom: 240px solid transparent;
   }
 }
 
-section {
+.component-wrapper {
+  background-color: $background-color;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.parallax-sections {
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 720px){
+.parallax-sections {
+    height: calc(var(--section-length) * 90vh);
+    position: relative;
+    margin-bottom: 15vh;
+}
+}
+
+.home-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+#parallax {
+  height: auto;
   width: 100%;
-  height: 100vh;
 }
-
-section:nth-child(1){
-  background-image: url("../../src/assets/images/mjht.jpeg");
-  background-size: cover;
+#parallax2 {
+  height: auto;
+  width: 100%;
 }
-
-section:nth-child(2){
-  background-image: url("../../src/assets/images/lemonprop.png");
-  background-size: cover;
-}
-
-
-section:nth-child(3){
-  background-image: url("../../src/assets/images/handlewhile.png");
-  background-size: cover;
+#parallax3 {
+  height: auto;
+  width: 100%;
 }
