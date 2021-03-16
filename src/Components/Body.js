@@ -16,6 +16,10 @@ const Body = props => {
 
   return (
     <div>
+
+      <section id="parallax">
+      </section>
+
       {/* <div className="project-banner-left">
         <h2>Property Management</h2>
         <p>This website provides a one-stop experience for property managers and tenants. It is built to add and resolve maintenance requests, payments, and to manage properties. The manager view and the tenant view are similar experiences but are two different views.</p>

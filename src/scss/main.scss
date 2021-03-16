@@ -90,12 +90,17 @@ section {
 }
 
 section:nth-child(1){
+  background-image: url("../../src/assets/images/mjht.jpeg");
+  background-size: cover;
+}
+
+section:nth-child(2){
   background-image: url("../../src/assets/images/lemonprop.png");
   background-size: cover;
 }
 
 
-section:nth-child(2){
+section:nth-child(3){
   background-image: url("../../src/assets/images/handlewhile.png");
   background-size: cover;
 }
