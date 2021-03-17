@@ -38,10 +38,10 @@ body {
   width: 600px;
   height: 480px;
   background: $background-color;
-  position: relative;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
+  bottom: 35px;
 
   &:after {
     content: '';
@@ -64,14 +64,15 @@ body {
 .project-banner-left{  
  display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 600px;
   height: 480px;
   background: $background-color;
-  position: relative;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
-  transform: perspective(0px) translate3d(1300px, 750px, 100px);
+  left: 66vw;
+  bottom: 35px;
+  transform: perspective(0px) translate3d(0px, 0px, 0px);
   &:after {
     content: '';
     position: absolute;
@@ -90,7 +91,11 @@ body {
     border-bottom: 240px solid transparent;
   }
 }
+.section-centering{
+  display: flex;
+  position: relative;
 
+}
 .component-wrapper {
   background-color: $background-color;
   color: #fff;
@@ -115,8 +120,11 @@ body {
 }
 
 #parallax {
+  display: flex;
+  justify-self: flex-start;
   height: auto;
   width: 100%;
+
 }
 #parallax2 {
   height: auto;
@@ -125,4 +133,129 @@ body {
 #parallax3 {
   height: auto;
   width: 100%;
+}
+
+.header{
+  display: flex;
+  height: 150px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center; 
+  background-color: $background-color;
+  border-radius: 5px;
+  font-family: sans-serif;
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1112;
+}
+.header-items{
+  display:flex;
+  margin-left: 55px;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1111;
+  backdrop-filter: $background-color;
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.bar{
+  display: flex;
+  align-content: center;
+  float: right;
+  margin-left: 100px;
+}
+ul {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   transform: rotate(-25deg) skew(deg);
+   transform-style: preserve-3d;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  top: 0px;
+  width: 60px;
+  height: 60px;
+  margin: 20px 30px;
+}
+ul li:before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #2a2a2a;
+  transform-origin: top;
+  transform: skewX(-35deg);
+}
+ul li:after{
+  content: '';
+  position: absolute;
+  top:5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: #2a2a2a;
+  transform-origin: right;
+  transform: skewY(-35deg);
+}
+ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  background: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+ul li:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #fff;
+  box-shadw: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+ul li:hover span:nth-child(5){
+  transform: translate(30px, -30px);
+  opacity: 1;
+}
+ul li:hover span:nth-child(4){
+  transform: translate(30px, -30px);
+  opacity: .8;
+}
+ul li:hover span:nth-child(3){
+  transform: translate(20px, -20px);
+  opacity: .6;
+}
+ul li:hover span:nth-child(2){
+  transform: translate(10px, -10px);
+  opacity: .4;
+}ul li:hover span:nth-child(1){
+  transform: translate(0px, 0px);
+  opacity: .2;
+}
+ul li:nth-child(1):hover span{
+  background: #52E19F !important;
+}
+ul li:nth-child(2):hover span{
+  background: #2C3456 !important;
+}
+ul li:nth-child(3):hover span{
+  background: #EA6E96 !important;
+}
+ul li:nth-child(4):hover span{
+  background: #FCEB00 !important;
 }
