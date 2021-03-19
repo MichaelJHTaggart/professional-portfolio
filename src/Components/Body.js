@@ -1,15 +1,12 @@
+import React from 'react'
+
 import '../scss/main.scss'
 import hero from "../../src/assets/images/mjht.jpeg"
 import lemon from "../../src/assets/images/lemonprop.png"
 import handle from "../../src/assets/images/handlewhile.png"
 
-import { fab, fa, far } from '@fortawesome/free-brands-svg-icons'
-
-import { fa-github, fa - xing, fa - file, fa - linkedin} from '@fortawesome/'
-
 
 const Body = props => {
-
   const openNewTab = (url) => {
     const win = window.open(`${url}`);
     win.focus();
@@ -46,7 +43,7 @@ const Body = props => {
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="fab fa-github"></span>
+                  <span><i class="fab fa-github"></i></span>
                 </a>
               </li>
               <li>
@@ -55,7 +52,7 @@ const Body = props => {
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="fab fa-xing"></span>
+                  <span class="fa fa-linkedin"></span>
                 </a>
               </li>
               <li>
@@ -64,7 +61,7 @@ const Body = props => {
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="far fa-file"></span>
+                  <span class="fa fa-linkedin"></span>
                 </a>
               </li>
               <li>

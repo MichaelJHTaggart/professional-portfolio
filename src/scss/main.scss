@@ -1,4 +1,7 @@
 @import './reset.scss';
+@import "../scssfa/fontawesome.scss";
+@import "../scssfa/solid.scss";
+@import '../scssfa/brands.scss';
 
 $background-color: #30011E;
 $primary-accent-color: #3772ff;
@@ -161,7 +164,7 @@ body {
   backdrop-filter: $background-color;
 }
 
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .bar{
   display: flex;
