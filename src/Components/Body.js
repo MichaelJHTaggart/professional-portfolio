@@ -3,6 +3,10 @@ import hero from "../../src/assets/images/mjht.jpeg"
 import lemon from "../../src/assets/images/lemonprop.png"
 import handle from "../../src/assets/images/handlewhile.png"
 
+import { fab, fa, far } from '@fortawesome/free-brands-svg-icons'
+
+import { fa-github, fa - xing, fa - file, fa - linkedin} from '@fortawesome/'
+
 
 const Body = props => {
 
@@ -42,7 +46,7 @@ const Body = props => {
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="fa fa-facebook"></span>
+                  <span class="fab fa-github"></span>
                 </a>
               </li>
               <li>
@@ -51,7 +55,7 @@ const Body = props => {
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="fa fa-twitter"></span>
+                  <span class="fab fa-xing"></span>
                 </a>
               </li>
               <li>
@@ -60,7 +64,7 @@ const Body = props => {
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="fa fa-instagram"></span>
+                  <span class="far fa-file"></span>
                 </a>
               </li>
               <li>
