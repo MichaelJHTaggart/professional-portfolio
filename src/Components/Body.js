@@ -5,6 +5,12 @@ import hero from "../../src/assets/images/mjht.jpeg"
 import lemon from "../../src/assets/images/lemonprop.png"
 import handle from "../../src/assets/images/handlewhile.png"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faGithub, faXing } from '@fortawesome/free-brands-svg-icons'
+import { fas, faFileAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+library.add(fab, fas, faGithub, faXing, faFileAlt)
 
 const Body = props => {
   const openNewTab = (url) => {
@@ -33,66 +39,51 @@ const Body = props => {
 
   return (
     <div className="parallax-sections component-wrapper" >
+      <div className="sticky">
+        <ul>
+          <li onClick={() => openNewTab('https://github.com/MichaelJHTaggart')} aria-label="Check out my portfolio!">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span><FontAwesomeIcon icon={['fab', 'github']} /></span>
+          </li>
+          <li onClick={() => openNewTab('https://www.linkedin.com/in/michaeljhtaggart/')} aria-label="Check out my portfolio!">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fa fa-linkedin"></span>
+          </li>
+          <li onClick={() => openNewTab('https://www.xing.com/profile/Michael_Taggart6/cv')} aria-label="Check out my profile!">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span ><FontAwesomeIcon icon={['fab', 'xing']} /></span>
+          </li>
+          <li onClick={() => openNewTab('https://docs.google.com/document/d/16NWvob6dIlHN5__NYBLA6xr-9eOmh8w6t8MRuMA8_10/edit?usp=sharing')} aria-label="Check out my resume!">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span><FontAwesomeIcon icon={['fas', 'file-alt']} /></span>
+          </li>
+          <li onClick={() => openNewTab('https://docs.google.com/document/d/16NWvob6dIlHN5__NYBLA6xr-9eOmh8w6t8MRuMA8_10/edit?usp=sharing')} aria-label="Check out my resume!">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span><FontAwesomeIcon icon={['fas', 'handshake']} /></span>
+          </li>
+        </ul>
+      </div>
       <section className="home-section">
         <div id="parallax" >
-          <div className="bar">
-            <ul>
-              <li>
-                <a href="#">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span><i class="fab fa-github"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fa fa-linkedin"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fa fa-linkedin"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fa fa-linkedin"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
           <img alt="Michael Taggart's Portfolio" id="parallax" src={hero} />
         </div>
       </section>
-      <div className="sticky">
-        <ol className="header">
-          <li><button className="project-button header-items" onClick={() => openNewTab('https://docs.google.com/document/d/16NWvob6dIlHN5__NYBLA6xr-9eOmh8w6t8MRuMA8_10/edit?usp=sharing')} aria-label="Google Docs Hosted">Resume
-          </button></li>
-          <li><button className="project-button header-items" onClick={() => openNewTab('https://github.com/MichaelJHTaggart')} aria-label="Check out my code!">GitHub
-          </button></li>
-          <li><button className="project-button header-items" onClick={() => openNewTab('https://www.linkedin.com/in/michaeljhtaggart/')} aria-label="Check out my profile!">LinkedIn
-          </button></li>
-          <li><button className="project-button header-items" onClick={() => openNewTab('https://www.xing.com/profile/Michael_Taggart6/cv')} aria-label="Check out my profile!">Xing
-          </button></li>
-          <li><button className="project-button header-items" onClick={() => openNewTab('https://handlewhile.com')} aria-label="Check out the website!">About Me
-          </button></li>
-        </ol>
-      </div>
+
       <section className="section-centering">
         <div className="project-banner-left">
           <h2>Property Management</h2>

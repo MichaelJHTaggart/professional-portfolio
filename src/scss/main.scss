@@ -1,7 +1,5 @@
 @import './reset.scss';
-@import "../scssfa/fontawesome.scss";
-@import "../scssfa/solid.scss";
-@import '../scssfa/brands.scss';
+
 
 $background-color: #30011E;
 $primary-accent-color: #3772ff;
@@ -157,20 +155,27 @@ body {
   margin-left: 55px;
 }
 .sticky {
+  display: flex;
+  float: left;
+  align-self: center;
+  justify-content: flex-start;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   z-index: 1111;
-  backdrop-filter: $background-color;
+  background-color: rgba(230, 230, 250, 0.205);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
 }
 
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .bar{
   display: flex;
-  align-content: center;
-  float: right;
-  margin-left: 100px;
+  float: left;
+  align-self: center;
+  justify-content: flex-start;
+  background-blend-mode: initial;
 }
 ul {
    display: flex;
@@ -257,8 +262,11 @@ ul li:nth-child(2):hover span{
   background: #2C3456 !important;
 }
 ul li:nth-child(3):hover span{
-  background: #EA6E96 !important;
+  background: #AFD400 !important;
 }
 ul li:nth-child(4):hover span{
   background: #FCEB00 !important;
+}
+ul li:nth-child(5):hover span{
+  background: #006dfc !important;
 }
