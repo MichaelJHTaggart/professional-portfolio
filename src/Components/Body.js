@@ -1,5 +1,4 @@
 import React from 'react'
-
 import '../scss/main.scss'
 import hero from "../../src/assets/images/mjht.jpeg"
 import lemon from "../../src/assets/images/lemonprop.png"

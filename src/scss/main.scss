@@ -4,13 +4,24 @@
 $background-color: #30011E;
 $primary-accent-color: #3772ff;
 $secondary-accent-color: #04e762;
-$tertiary-accent-color: #BCE7FD;
+$tertiary-accent-color: #73d0ff;
 $text-color: #E6E8E6;
 $font-weights: (
  "regular": 400,
  "medium": 500, 
  "bold": 700
 );
+
+h2 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: xx-large;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  padding: 50px;
+  word-spacing: .08em;
+}
 
 body {
   overflow-x: hidden;
@@ -44,6 +55,7 @@ body {
   justify-content: center;
   bottom: 35px;
 
+
   &:after {
     content: '';
     position: absolute;
@@ -71,7 +83,7 @@ body {
   position: absolute;
   align-items: center;
   justify-content: center;
-  left: 66vw;
+  left: 68vw;
   bottom: 35px;
   transform: perspective(0px) translate3d(0px, 0px, 0px);
   &:after {
