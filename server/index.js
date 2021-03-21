@@ -17,7 +17,7 @@ app.use(session({
 
 app.use(express.static(`${__dirname}/../build`)) //serving our build folder
 
-app.post('/send', nodeCtrl.autoEmail)
+// app.post('/send', nodeCtrl.autoEmail)
 
 app.get('*', (req, res) => {
  res.sendFile(path.join(__dirname, '../build/index.html'))
