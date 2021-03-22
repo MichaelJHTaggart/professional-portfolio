@@ -6,7 +6,7 @@ const AboutMe = props => {
 
  return (<div>
 
-  <div></div>
+  <div>ABOUT ME</div>
  </div>
 
  );
