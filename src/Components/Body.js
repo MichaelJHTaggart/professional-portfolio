@@ -17,6 +17,7 @@ import Sass_Logo from '../assets/Skills/sass-1.svg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faHtml5, faCss3, faSass, faNodeJs, faReact, faGit } from '@fortawesome/free-brands-svg-icons'
+import { fas, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 library.add(fab, faHtml5, faCss3, faSass, faNodeJs, faReact, faGit)
@@ -30,7 +31,7 @@ const Body = props => {
   window.addEventListener("scroll", function () {
     const parallax = document.getElementById("parallax");
     let offset = window.pageYOffset;
-    parallax.style.objectPosition = offset * 0.1 + "px";
+    parallax.style.objectPosition = offset * 0.7 + "px";
   })
 
   window.addEventListener("scroll", function () {
@@ -50,7 +51,15 @@ const Body = props => {
     <div className="parallax-sections component-wrapper" >
       <section className="home-section">
         <div id="parallax" >
+          <div className="hero-text-container">
+            <h2 className="hero-text">Michael J.H. Taggart</h2>
+            <h2 className="hero-text">Full Stack</h2>
+            <h2 className="hero-text">Web Developer</h2>
+          </div>
+
           <img alt="Michael Taggart's Portfolio" id="parallax" src={hero} />
+
+
         </div>
       </section>
 
@@ -130,7 +139,7 @@ const Body = props => {
       <section>
         <h2 className="contact-info">Email: mtaggarthawk@gmail.com</h2>
         <h2 className="contact-info">Phone: 801-735-2563</h2>
-        <h2 className="contact-info">Or click the links above for my LinkedIn, Xing, or Resume!</h2>
+        <h2 className="contact-info">Or click the links above for my GitHub, LinkedIn, Xing, or Resume!</h2>
       </section>
     </div >
   );

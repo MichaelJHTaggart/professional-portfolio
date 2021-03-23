@@ -116,21 +116,12 @@ body {
   color: #fff;
 
 }
-
-@media screen and (min-width: 720px){
-.parallax-sections {
-    height: calc(var(--section-length) * 90vh);
-    position: relative;
-    margin-bottom: 15vh;
-}
-}
-
 .home-section {
   display: flex;
 }
 
 #parallax {
-  display: flex;
+  display: relative;
   justify-self: flex-start;
   height: auto;
   width: 100%;
@@ -199,6 +190,23 @@ body {
 }
 .contact-info{
   height: auto;
-  margin: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   letter-spacing: 5px;
+}
+.hero-text{
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  color: rgb(178, 230, 221);
+  text-shadow: 2px 1px$background-color;
+
+}
+.hero-text-container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  margin: 30px;
 }
