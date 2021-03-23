@@ -182,3 +182,23 @@ body {
   color: white;
   width: 700px;
 }
+
+.skills{
+  flex-wrap: wrap;
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+.skills-image{
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 200px;
+}
+.contact-info{
+  height: auto;
+  margin: 20px;
+  letter-spacing: 5px;
+}

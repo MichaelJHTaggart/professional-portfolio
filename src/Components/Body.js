@@ -4,6 +4,17 @@ import hero from "../../src/assets/images/mjht.jpeg"
 import lemon from "../../src/assets/images/lemonprop.png"
 import handle from "../../src/assets/images/handlewhile.png"
 
+import CSS_Logo from '../assets/Skills/css-5.svg'
+import Git_Logo from '../assets/Skills/git-icon.svg'
+import GitHub_Logo from '../assets/Skills/github-icon-1.svg'
+import HTML_Logo from '../assets/Skills/html5.svg'
+import JS_Logo from '../assets/Skills/javascript.svg'
+import Node_Logo from '../assets/Skills/node-js-logo.svg'
+import Postgres_Logo from '../assets/Skills/postgresql.svg'
+import Postman_Logo from '../assets/Skills/postman-logo-stacked.svg'
+import React_Logo from '../assets/Skills/react-2.svg'
+import Sass_Logo from '../assets/Skills/sass-1.svg'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faHtml5, faCss3, faSass, faNodeJs, faReact, faGit } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -80,9 +91,46 @@ const Body = props => {
         <h2 className="divider-header">Skills</h2>
         <div className="border-line"></div>
       </section>
+      <ol className="skills">
+        <li className="skills-image">
+          <img alt="CSS" src={CSS_Logo} /><h2>CSS</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="Git" src={Git_Logo} /><h2>Git</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="GitHub" src={GitHub_Logo} /><h2>GitHub</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="HTML" src={HTML_Logo} /><h2>HTML</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="Javascript" src={JS_Logo} /><h2>Javascript</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="Node.js" src={Node_Logo} /><h2>Node.js</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="PostgreSQL" src={Postgres_Logo} /><h2>PostgreSQL</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="Postman" src={Postman_Logo} /><h2>Postman</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="React" src={React_Logo} /><h2>React</h2>
+        </li>
+        <li className="skills-image">
+          <img alt="Sass" src={Sass_Logo} /><h2>Sass</h2>
+        </li>
+      </ol>
+      <section className="divider">
+        <h2 className="divider-header">Contact Me!</h2>
+        <div className="border-line"></div>
+      </section>
       <section>
-        <FontAwesomeIcon icon={['fab', 'faHtml5']} />
-        <FontAwesomeIcon icon={['fab', 'faCss3']} />
+        <h2 className="contact-info">Email: mtaggarthawk@gmail.com</h2>
+        <h2 className="contact-info">Phone: 801-735-2563</h2>
+        <h2 className="contact-info">Or click the links above for my LinkedIn, Xing, or Resume!</h2>
       </section>
     </div >
   );
