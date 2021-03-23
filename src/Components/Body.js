@@ -4,8 +4,11 @@ import hero from "../../src/assets/images/mjht.jpeg"
 import lemon from "../../src/assets/images/lemonprop.png"
 import handle from "../../src/assets/images/handlewhile.png"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faHtml5, faCss3, faSass, faNodeJs, faReact, faGit } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
+library.add(fab, faHtml5, faCss3, faSass, faNodeJs, faReact, faGit)
 
 const Body = props => {
   const openNewTab = (url) => {
@@ -40,6 +43,11 @@ const Body = props => {
         </div>
       </section>
 
+      <section className="divider">
+        <h2 className="divider-header">Projects</h2>
+        <div className="border-line"></div>
+      </section>
+
       <section className="section-centering">
         <div className="project-banner-left">
           <h2>Property Management</h2>
@@ -67,6 +75,14 @@ const Body = props => {
           <img alt="handlewhile.com website" id="parallax3" src={handle} />
         </div>
 
+      </section>
+      <section className="divider">
+        <h2 className="divider-header">Skills</h2>
+        <div className="border-line"></div>
+      </section>
+      <section>
+        <FontAwesomeIcon icon={['fab', 'faHtml5']} />
+        <FontAwesomeIcon icon={['fab', 'faCss3']} />
       </section>
     </div >
   );

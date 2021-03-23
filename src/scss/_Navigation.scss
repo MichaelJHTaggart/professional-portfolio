@@ -1,16 +1,20 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.bar{
+.sticky {
   display: flex;
-  float: left;
-  align-self: center;
-  justify-content: flex-start;
-  background-blend-mode: initial;
+  float: center;
+  justify-content: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1111;
+  background-color: rgba(230, 230, 250, 0.205);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
 }
 ul {
    display: flex;
-   flex-direction: column;
-   align-content: center;
+   flex-direction: row;
    transform: rotate(-25deg) skew(deg);
    transform-style: preserve-3d;
 }
@@ -32,18 +36,18 @@ ul li:before{
   height: 10px;
   background: #2a2a2a;
   transform-origin: top;
-  transform: skewX(-35deg);
+  transform: skewX(-42deg);
 }
 ul li:after{
   content: '';
   position: absolute;
-  top:5px;
+  top: 3px;
   left: -9px;
   width: 9px;
   height: 100%;
   background: #2a2a2a;
   transform-origin: right;
-  transform: skewY(-35deg);
+  transform: skewY(-42deg);
 }
 ul li span{
   position: absolute;
@@ -67,19 +71,19 @@ ul li:hover span {
   box-shadw: -1px 1px 1px rgba(0, 0, 0, .5);
 }
 ul li:hover span:nth-child(5){
-  transform: translate(30px, -30px);
+  transform: translate(15px, -15px);
   opacity: 1;
 }
 ul li:hover span:nth-child(4){
-  transform: translate(30px, -30px);
+  transform: translate(15px, -15px);
   opacity: .8;
 }
 ul li:hover span:nth-child(3){
-  transform: translate(20px, -20px);
+  transform: translate(15px, -15px);
   opacity: .6;
 }
 ul li:hover span:nth-child(2){
-  transform: translate(10px, -10px);
+  transform: translate(15px, -15px);
   opacity: .4;
 }ul li:hover span:nth-child(1){
   transform: translate(0px, 0px);
@@ -95,7 +99,7 @@ ul li:nth-child(3):hover span{
   background: #AFD400 !important;
 }
 ul li:nth-child(4):hover span{
-  background: #FCEB00 !important;
+  background: #ff0000 !important;
 }
 ul li:nth-child(5):hover span{
   background: #006dfc !important;

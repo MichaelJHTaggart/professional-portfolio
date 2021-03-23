@@ -6,7 +6,7 @@
 $background-color: #30011E;
 $primary-accent-color: #3772ff;
 $secondary-accent-color: #04e762;
-$tertiary-accent-color: #73d0ff;
+$tertiary-accent-color: #006dfc;
 $text-color: #E6E8E6;
 $font-weights: (
  "regular": 400,
@@ -40,6 +40,7 @@ body {
  height: 3vh;
  justify-content: center;
  align-items: center;
+ color: white;
   &:hover {
    background-color: $secondary-accent-color;
   }
@@ -76,7 +77,7 @@ body {
   }
 }
 .project-banner-left{  
- display: flex;
+  display: flex;
   flex-direction: column;
   width: 600px;
   height: 480px;
@@ -84,7 +85,7 @@ body {
   position: absolute;
   align-items: center;
   justify-content: center;
-  left: 68vw;
+  right: 0px;
   bottom: 35px;
   transform: perspective(0px) translate3d(0px, 0px, 0px);
   &:after {
@@ -113,12 +114,7 @@ body {
 .component-wrapper {
   background-color: $background-color;
   color: #fff;
-  position: relative;
-  z-index: 2;
-}
 
-.parallax-sections {
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 720px){
@@ -167,16 +163,22 @@ body {
   display:flex;
   margin-left: 55px;
 }
-.sticky {
+.divider{
+  margin: 50px;
+  margin-left: 150px;
+  height: 100px;
   display: flex;
-  float: left;
-  align-self: center;
   justify-content: flex-start;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  z-index: 1111;
-  background-color: rgba(230, 230, 250, 0.205);
-  backdrop-filter: blur(10px);
-  border-radius: 25px;
+}
+.divider-header{
+  font-size: 5em;
+}
+.border-line{
+  margin-left: 200px;
+  margin-top: 40px;
+  height: .0009px;
+  border-width: 2px;
+  border: solid;
+  color: white;
+  width: 700px;
 }
